@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Suporte do app Meu Suplemento Diario.">
+  <title>Meu Suplemento Diario - Suporte</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f1f6f4;
+      --card: #ffffff;
+      --ink: #0d1b16;
+      --muted: #4b6359;
+      --brand: #00b873;
+      --line: #dce8e2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header,
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 10px;
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    p,
+    ul {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 8px;
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--brand);
+      border: 1px solid var(--brand);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Meu Suplemento Diario</h1>
+      <p>Suporte para perguntas, problemas, assinaturas e sugestoes do app.</p>
+      <div class="actions">
+        <a class="button" href="mailto:willonplay@gmail.com?subject=Suporte%20Meu%20Suplemento%20Diario">Enviar email</a>
+        <a class="button secondary" href="https://github.com/WillyanAnjos/mobile_meu_suplemento/issues">Abrir chamado</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Como pedir ajuda</h2>
+      <p>Envie uma mensagem com o modelo do dispositivo, versao do sistema, versao do app e uma descricao do que aconteceu. Se for um problema com assinatura, inclua se a compra foi feita pela App Store ou Google Play.</p>
+    </section>
+
+    <section>
+      <h2>Assinaturas</h2>
+      <ul>
+        <li>Compras, renovacoes, cancelamentos e reembolsos sao gerenciados pela loja da plataforma.</li>
+        <li>No iPhone ou iPad, gerencie pelo app Ajustes ou pela pagina de assinaturas da App Store.</li>
+        <li>No Android, gerencie pelo Google Play.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacidade e termos</h2>
+      <p>
+        <a href="https://docs.google.com/document/d/13U2lFwAuf5_R0zhXfWkgEvFUcP1fyfnhhZ6wa0B0Kvw/edit?usp=sharing">Politica de Privacidade</a>
+        e
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Termos de Uso</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
