@@ -3,137 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Suporte do app Meu Suplemento Diario.">
-  <title>Meu Suplemento Diario - Suporte</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f1f6f4;
-      --card: #ffffff;
-      --ink: #0d1b16;
-      --muted: #4b6359;
-      --brand: #00b873;
-      --line: #dce8e2;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
-    }
-
-    main {
-      width: min(760px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 48px 0;
-    }
-
-    header,
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 24px;
-      margin-bottom: 16px;
-    }
-
-    h1,
-    h2 {
-      margin: 0 0 10px;
-      line-height: 1.15;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 6vw, 3rem);
-    }
-
-    h2 {
-      font-size: 1.25rem;
-    }
-
-    p,
-    ul {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li + li {
-      margin-top: 8px;
-    }
-
-    a {
-      color: var(--brand);
-      font-weight: 700;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 0 16px;
-      border-radius: 8px;
-      background: var(--brand);
-      color: white;
-      text-decoration: none;
-    }
-
-    .button.secondary {
-      background: transparent;
-      color: var(--brand);
-      border: 1px solid var(--brand);
-    }
-  </style>
+  <meta name="description" content="Suporte e Política de Privacidade do aplicativo Meu Suplemento Diário.">
+  <meta name="theme-color" content="#00b873">
+  <title>Meu Suplemento Diário — Suporte e Privacidade</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main>
     <header>
-      <h1>Meu Suplemento Diario</h1>
-      <p>Suporte para perguntas, problemas, assinaturas e sugestoes do app.</p>
-      <div class="actions">
-        <a class="button" href="mailto:willonplay@gmail.com?subject=Suporte%20Meu%20Suplemento%20Diario">Enviar email</a>
+      <h1>Meu Suplemento Diário</h1>
+      <p>Suporte para perguntas, problemas, assinaturas e sugestões do app.</p>
+      <nav class="actions" aria-label="Suporte e privacidade">
+        <a class="button" href="mailto:willonplay@gmail.com?subject=Suporte%20Meu%20Suplemento%20Diario">Enviar e-mail</a>
         <a class="button secondary" href="https://github.com/WillyanAnjos/mobile_meu_suplemento/issues">Abrir chamado</a>
-      </div>
+        <a class="button secondary" href="#privacidade">Política de Privacidade</a>
+      </nav>
     </header>
 
-    <section>
-      <h2>Como pedir ajuda</h2>
-      <p>Envie uma mensagem com o modelo do dispositivo, versao do sistema, versao do app e uma descricao do que aconteceu. Se for um problema com assinatura, inclua se a compra foi feita pela App Store ou Google Play.</p>
+    <section aria-labelledby="ajuda">
+      <h2 id="ajuda">Como pedir ajuda</h2>
+      <p>Envie uma mensagem com o modelo do dispositivo, versão do sistema, versão do app e uma descrição do que aconteceu. Se for um problema com assinatura, inclua se a compra foi feita pela App Store ou Google Play.</p>
     </section>
 
-    <section>
-      <h2>Assinaturas</h2>
+    <section aria-labelledby="assinaturas">
+      <h2 id="assinaturas">Assinaturas</h2>
       <ul>
-        <li>Compras, renovacoes, cancelamentos e reembolsos sao gerenciados pela loja da plataforma.</li>
-        <li>No iPhone ou iPad, gerencie pelo app Ajustes ou pela pagina de assinaturas da App Store.</li>
+        <li>Compras, renovações, cancelamentos e reembolsos são gerenciados pela loja da plataforma.</li>
+        <li>No iPhone ou iPad, gerencie pelo app Ajustes ou pela página de assinaturas da App Store.</li>
         <li>No Android, gerencie pelo Google Play.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Privacidade e termos</h2>
-      <p>
-        <a href="https://docs.google.com/document/d/13U2lFwAuf5_R0zhXfWkgEvFUcP1fyfnhhZ6wa0B0Kvw/edit?usp=sharing">Politica de Privacidade</a>
-        e
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Termos de Uso</a>.
-      </p>
+    <section aria-labelledby="termos">
+      <h2 id="termos">Privacidade e termos</h2>
+      <p><a href="#privacidade">Política de Privacidade</a> e <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Termos de Uso</a>.</p>
+    </section>
+
+    <section id="privacidade" aria-labelledby="titulo-privacidade">
+      <h2 id="titulo-privacidade">Política de Privacidade — Meu Suplemento</h2>
+        <p>Última atualização: 21 de maio de 2026</p>
+        <p>O aplicativo Meu Suplemento foi desenvolvido para ajudar usuários a organizar sua rotina de suplementação, cadastrar suplementos, definir horários, controlar doses tomadas e acompanhar o histórico de consumo.</p>
+        <p>Esta Política de Privacidade explica como o aplicativo trata informações dos usuários.</p>
+        <p>Ao utilizar o aplicativo Meu Suplemento, você concorda com os termos descritos nesta Política de Privacidade.</p>
+      <div class="policy-section">
+        <h3>1. Informações que o aplicativo coleta</h3>
+        <p>O Meu Suplemento pode armazenar informações inseridas pelo próprio usuário, como:</p>
+        <ul>
+          <li>Nome dos suplementos cadastrados;</li>
+          <li>Quantidade ou dose definida pelo usuário;</li>
+          <li>Horários de uso dos suplementos;</li>
+          <li>Registro diário de suplementos tomados;</li>
+          <li>Histórico de consumo;</li>
+          <li>Preferências relacionadas à rotina de suplementação.</li>
+        </ul>
+        <p>Essas informações são utilizadas apenas para funcionamento das principais funcionalidades do aplicativo.</p>
+      </div>
+      <div class="policy-section">
+        <h3>2. Armazenamento dos dados</h3>
+        <p>Os dados cadastrados no Meu Suplemento são armazenados localmente no dispositivo do usuário, por meio de banco de dados local.</p>
+        <p>O aplicativo não exige criação de conta, login ou cadastro pessoal para uso das funcionalidades principais.</p>
+        <p>Caso o usuário desinstale o aplicativo ou limpe os dados do app nas configurações do dispositivo, as informações armazenadas localmente poderão ser apagadas permanentemente.</p>
+      </div>
+      <div class="policy-section">
+        <h3>3. Uso das informações</h3>
+        <p>As informações inseridas no aplicativo são utilizadas para:</p>
+        <ul>
+          <li>Exibir a lista de suplementos cadastrados;</li>
+          <li>Controlar a quantidade tomada no dia;</li>
+          <li>Gerar histórico de uso;</li>
+          <li>Organizar horários de consumo;</li>
+          <li>Enviar lembretes e notificações, quando configurados pelo usuário;</li>
+          <li>Melhorar a experiência de uso do aplicativo.</li>
+        </ul>
+        <p>O Meu Suplemento não vende dados pessoais dos usuários.</p>
+      </div>
+      <div class="policy-section">
+        <h3>4. Notificações</h3>
+        <p>O aplicativo pode enviar notificações locais para lembrar o usuário dos horários definidos para tomar seus suplementos.</p>
+        <p>As notificações são baseadas nas informações cadastradas pelo próprio usuário dentro do aplicativo.</p>
+        <p>O usuário pode desativar as notificações a qualquer momento nas configurações do dispositivo.</p>
+      </div>
+      <div class="policy-section">
+        <h3>5. Anúncios e serviços de terceiros</h3>
+        <p>O Meu Suplemento pode exibir anúncios por meio de plataformas de terceiros, como o Google AdMob.</p>
+        <p>Esses serviços podem coletar informações técnicas do dispositivo, identificadores de publicidade, dados de uso e informações aproximadas para exibição, medição e personalização de anúncios, conforme as políticas dos respectivos provedores.</p>
+        <p>O Google Play exige que apps com anúncios sejam declarados como contendo anúncios na Play Console, incluindo anúncios exibidos por SDKs de terceiros.</p>
+        <p>Serviços de terceiros que podem ser utilizados:</p>
+        <ul>
+          <li>Google AdMob;</li>
+          <li>Google Play Services;</li>
+          <li>Firebase Analytics, se implementado futuramente;</li>
+          <li>Firebase Crashlytics, se implementado futuramente.</li>
+        </ul>
+        <p>O tratamento de dados por esses serviços é regido pelas políticas de privacidade dos próprios provedores.</p>
+      </div>
+      <div class="policy-section">
+        <h3>6. Dados pessoais e sensíveis</h3>
+        <p>O Meu Suplemento não solicita dados como CPF, endereço, telefone, localização precisa, contatos, fotos, câmera, microfone ou informações financeiras.</p>
+        <p>O aplicativo também não tem como finalidade diagnosticar, tratar ou substituir acompanhamento médico, nutricional ou profissional.</p>
+        <p>As informações cadastradas sobre suplementos são inseridas voluntariamente pelo usuário e utilizadas apenas para controle pessoal dentro do app.</p>
+        <p>Segundo a política de dados do usuário da Google Play, apps que lidam com dados pessoais ou sensíveis devem limitar a coleta ao necessário, tratar os dados com segurança, divulgar o uso dos dados e não vender dados pessoais ou sensíveis.</p>
+      </div>
+      <div class="policy-section">
+        <h3>7. Compartilhamento de dados</h3>
+        <p>O Meu Suplemento não compartilha diretamente os dados cadastrados localmente pelo usuário, como nome dos suplementos, doses e histórico de consumo.</p>
+        <p>No entanto, serviços de terceiros usados para anúncios, análise ou estabilidade do aplicativo podem coletar determinados dados técnicos de acordo com suas próprias políticas.</p>
+        <p>O compartilhamento pode ocorrer apenas nos seguintes casos:</p>
+        <ul>
+          <li>Para funcionamento de anúncios;</li>
+          <li>Para análise de desempenho do aplicativo, caso ferramentas de analytics sejam utilizadas;</li>
+          <li>Para correção de erros e falhas, caso ferramentas de crash report sejam utilizadas;</li>
+          <li>Quando exigido por lei, autoridade competente ou obrigação legal.</li>
+        </ul>
+      </div>
+      <div class="policy-section">
+        <h3>8. Segurança dos dados</h3>
+        <p>O Meu Suplemento adota medidas razoáveis para proteger as informações armazenadas localmente no dispositivo.</p>
+        <p>Como os dados principais ficam no próprio aparelho do usuário, a segurança também depende das configurações do dispositivo, como senha, bloqueio de tela e proteção contra acesso não autorizado.</p>
+        <p>Nenhum método de armazenamento eletrônico é totalmente seguro, mas buscamos utilizar práticas adequadas para reduzir riscos.</p>
+      </div>
+      <div class="policy-section">
+        <h3>9. Permissões do aplicativo</h3>
+        <p>O aplicativo pode solicitar permissões necessárias para seu funcionamento, como:</p>
+        <ul>
+          <li>Permissão para envio de notificações;</li>
+          <li>Permissão de acesso à internet, quando necessária para exibição de anúncios.</li>
+        </ul>
+        <p>O app não deve solicitar permissões que não sejam necessárias para suas funcionalidades principais.</p>
+        <p>A política da Google Play recomenda que permissões sensíveis sejam solicitadas apenas quando forem necessárias para recursos atuais do aplicativo e de forma compreensível para o usuário.</p>
+      </div>
+      <div class="policy-section">
+        <h3>10. Crianças</h3>
+        <p>O Meu Suplemento não é direcionado especificamente a crianças.</p>
+        <p>O aplicativo é voltado para pessoas interessadas em organizar sua rotina de suplementação, treinos, academia e hábitos fitness.</p>
+        <p>Caso o aplicativo venha a ser direcionado para crianças ou usado por esse público, poderão ser aplicadas regras adicionais de privacidade e segurança.</p>
+      </div>
+      <div class="policy-section">
+        <h3>11. Exclusão dos dados</h3>
+        <p>Como os dados principais são armazenados localmente no dispositivo, o usuário pode excluir suas informações das seguintes formas:</p>
+        <ul>
+          <li>Apagando os suplementos cadastrados dentro do aplicativo;</li>
+          <li>Limpando os dados do app nas configurações do Android;</li>
+          <li>Desinstalando o aplicativo.</li>
+        </ul>
+        <p>Após a exclusão, os dados locais poderão não ser recuperados.</p>
+      </div>
+      <div class="policy-section">
+        <h3>12. Alterações nesta Política de Privacidade</h3>
+        <p>Esta Política de Privacidade pode ser atualizada periodicamente para refletir melhorias no aplicativo, alterações legais ou mudanças em serviços de terceiros utilizados.</p>
+        <p>A data da última atualização será sempre exibida no início deste documento.</p>
+        <p>Recomendamos que o usuário revise esta Política de Privacidade regularmente.</p>
+      </div>
+      <div class="policy-section">
+        <h3>13. Contato</h3>
+        <p>Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados no aplicativo Meu Suplemento, entre em contato pelo e-mail:</p>
+        <p><a href="mailto:devwillyan@gmail.com">devwillyan@gmail.com</a></p>
+      </div>
     </section>
   </main>
 </body>
